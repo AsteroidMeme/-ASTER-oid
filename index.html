@@ -1836,7 +1836,7 @@
             </div>
 
             <div style="margin-top:18px;">
-              <a class="btn btn-secondary" href="#" id="whitepaperBtn">Download Whitepaper PDF</a>
+              <a class="btn btn-secondary" href="asteroid_whitepaper_en.pdf" id="whitepaperBtn" download>Download Whitepaper PDF</a>
             </div>
           </div>
         </div>
@@ -2120,11 +2120,7 @@
     copyBtnBottom?.addEventListener("click", () => copyContract(copyBtnBottom, "Copy Address"));
     copyBtnSticky?.addEventListener("click", () => copyContract(copyBtnSticky, "Copy Contract"));
 
-    const whitepaperBtn = document.getElementById("whitepaperBtn");
-    whitepaperBtn?.addEventListener("click", (event) => {
-      event.preventDefault();
-      alert("Attach your real whitepaper PDF file and replace this button link.");
-    });
+
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
